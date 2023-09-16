@@ -122,14 +122,25 @@
         i++;
     }
 
-    // loder time
-    var myvar = setTimeout(lode, 10000);
+    // loder time one time ⌚ 
+    // var myvar = setTimeout(lode, 10000);
 
-    function lode() {
-        document.querySelector(".stetment").classList.remove("vis")
-        document.querySelector(".divtime").classList.add("vis");
+    // function lode() {
+    //     document.querySelector(".stetment").classList.remove("vis")
+    //     document.querySelector(".divtime").classList.add("vis");
+    // }
+
+// continuous ⌚ repite 
+    var myInterval = setInterval(returned, 3000);
+    function returned() {
+
+        time[0].innerHTML = `${(timings * 10 - i) % 10}`;
+
+        i++;
+
+        document.querySelector(".stetment").classList.toggle("vis")
+        document.querySelector(".divtime").classList.toggle("vis");
     }
-
 
 
 
