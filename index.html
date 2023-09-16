@@ -123,7 +123,7 @@
     }
 
     // loder time one time ⌚ 
-    // var myvar = setTimeout(lode, 10000);
+    // var myvar = setTimeout(lode, 1000);
 
     // function lode() {
     //     document.querySelector(".stetment").classList.remove("vis")
@@ -134,7 +134,7 @@
     var myInterval = setInterval(returned, 3000);
     function returned() {
 
-        time[0].innerHTML = `${(timings * 10 - i) % 10}`;
+        time[0].innerHTML = `${(timings * 10 + i) % 10}`;
 
         i++;
 
